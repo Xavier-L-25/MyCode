@@ -1,0 +1,88 @@
+.main-orderHistory-container {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  overflow-x: hidden;
+  background: -webkit-linear-gradient(
+    top,
+    #681a639c 0%,
+    #3c1c65a5 62%,
+    #312060ba 100%
+  );
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.orderHistory-table-container {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 10px;
+  box-shadow: 0 0.4rem 0.8rem #0005;
+}
+
+.table td,
+.table th {
+  border: none;
+}
+
+.bg-headers,
+th {
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.621);
+  color: rgb(31, 31, 31) !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td {
+  font-size: 12px;
+  color: rgb(211, 211, 211) !important;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+}
+
+section.orderHistory-table-header {
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0 1.5rem;
+  font-weight: 600;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 25px;
+}
+
+section.orderHistory-table-header h1 {
+  font-size: 25px;
+}
+
+.table-list {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+th,
+td {
+  padding: 1rem !important;
+}
+
+.orderHistory-table-body tr {
+  position: relative;
+}
+
+.orderHistory-table-body tr:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #312060ba;
+}
+
+.orderHistory-table-body tr:nth-child(even) {
+  background-color: #0000000b;
+}
